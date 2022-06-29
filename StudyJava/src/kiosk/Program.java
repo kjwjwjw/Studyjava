@@ -9,20 +9,20 @@ public class Program {
 
    public static void main(String[] args) {
       while(true) {
-         
-         
+
+
          Screen sc = new Screen();
-         sc.showtit();    //tit °øÂ÷
-         sc.showbtn();    //btn Ä¿ÇÇ À½·á »§
-       
-         
+         sc.showtit();    //tit ê³µì°¨
+         sc.showbtn();    //btn ì»¤í”¼ ìŒë£Œ ë¹µ
+
+
          NewScreen ns = new NewScreen();
-         ns.mat();       //¸Ş´ºÆÇ
-         ns.receipt();    //ÁÖ¹®³»¿ª
-         ns.Buy();       // °áÁ¦ orÁÖ¹®Ãë¼Ò
-         
-   
+         ns.mat();       //ë©”ë‰´íŒ
+         ns.receipt();    //ì£¼ë¬¸ë‚´ì—­
+         ns.Buy();       // ê²°ì œ orì£¼ë¬¸ì·¨ì†Œ
+
+
       }
-      
+
    }   
 }   

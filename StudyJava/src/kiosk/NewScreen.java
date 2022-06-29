@@ -8,71 +8,71 @@ public class NewScreen extends Screen{
 	   static int number = 0;
 	   static int num3;
 	   Scanner sc = new Scanner(System.in);
-	   Text   txt1 = new Text("Milk Tea");       Title tit1 = new Title("Àá½Ã¸¸ ±â´Ù·ÁÁÖ¼¼¿ä.");
-	   Text   txt2 = new Text("Drink");      Title tit2 = new Title("¸ÀÀÖ´Â À½½ÄÀÌ ÁÖ¹®µÇ¾ú½À´Ï´Ù.");
-	   Text   txt3 = new Text("Bread");      Title txt4 = new Title("TOPPINGÀ» Ãß°¡ÇÏ°Ú½À´Ï±î?");
+	   Text   txt1 = new Text("Milk Tea");       Title tit1 = new Title("ì ì‹œë§Œ ê¸°ë‹¤ë ¤ì£¼ì„¸ìš”.");
+	   Text   txt2 = new Text("Drink");      Title tit2 = new Title("ë§›ìˆëŠ” ìŒì‹ì´ ì£¼ë¬¸ë˜ì—ˆìŠµë‹ˆë‹¤.");
+	   Text   txt3 = new Text("Bread");      Title txt4 = new Title("TOPPINGì„ ì¶”ê°€í•˜ê² ìŠµë‹ˆê¹Œ?");
 	   Bar      bar = new Bar();
-	   Title tit = new Title("°áÁ¦Áß");
-	    
-	   public NewScreen() {                    //¸Ş´ºÆÇ,(ÀÌ¸§,°¡°İ)(ÅäÇÎÀÌ¸§,°¡°İ)
-	      //         <MENU>                              <TOPPING'S MENU>
-	      Array.add("mnu:ºí·¢¹ĞÅ©Æ¼:1500 => 0");         ArrayTopping.add("mnu: ÆŞ         =>500 =>   0");
-	      Array.add("mnu:¾ó±×·¹ÀÌ¹ĞÅ©Æ¼:3500 => 1");         ArrayTopping.add("mnu: ÄÚÄÚ³Ó    =>500=>    1");
-	      Array.add("mnu:ÀÚ½º¹Î ±×¸°¹ĞÅ©Æ¼  : 3500 => 2");         ArrayTopping.add("mnu: ¾Ë·Î¿¡    =>500=>    2");
-	      Array.add("mnu:Å¸·Î¹ĞÅ©Æ¼: 2500 => 3");         ArrayTopping.add("mnu: È­ÀÌÆ®³Ó =>500=>    3");
-	      Array.add("mnu:Á¦ÁÖ ±×¸°¹ĞÅ©Æ¼: 5500 => 4");         ArrayTopping.add("mnu: Ãß°¡ ¾ÈÇÔ         =>    4");
-	                                          //      <TOPPING'S Price>
-	      Array.add("mnu:ÀÚ¸ùÁê½º   : 10000 => 5");         ArrayToppingPrice.add(500);
-	      Array.add("mnu:¿À·»ÁöÁê½º: 9000  => 6");         ArrayToppingPrice.add(500);
-	      Array.add("mnu:Æ÷µµ Áê½º  : 10000 => 7");         ArrayToppingPrice.add(500);
-	      Array.add("mnu:Åä¸¶ÅäÁê½º: 7000  => 8");         ArrayToppingPrice.add(500);
-	      Array.add("mnu:µş±â Áê½º  : 15000 => 9");         ArrayToppingPrice.add(0);
-	      
-	      Array.add("mnu:»ıÅ©¸²ÄÉÀÍ: 30000 => 10");
-	      Array.add("mnu:ÃÊÄÚÄÉÀÍ   : 35000 => 11");
-	      Array.add("mnu:µş±âÄÉÀÍ   : 37000 => 12");
-	      Array.add("mnu:»÷µåÀ§Ä¡   : 25000 => 13");
-	      Array.add("mnu:ºê ·± Ä¡    : 55000 => 14");
-	   //  <MENU NAME>                   <MENU Price>
-	      ArrayName.add("ºí·¢¹ĞÅ©Æ¼");      ArrayPrice.add(1500);
-	      ArrayName.add("¾ó±×·¹ÀÌ¹ĞÅ©Æ¼");      ArrayPrice.add(3500);
-	      ArrayName.add("ÀÚ½º¹Î ±×¸°¹ĞÅ©Æ¼");      ArrayPrice.add(3500);
-	      ArrayName.add("Å¸·Î¹ĞÅ©Æ¼");      ArrayPrice.add(2500);
-	      ArrayName.add("Á¦ÁÖ ±×¸°¹ĞÅ©Æ¼");      ArrayPrice.add(5500);
-	      
-	      ArrayName.add("ÀÚ¸ùÁê½º");         ArrayPrice.add(10000);
-	      ArrayName.add("¿À·»ÁöÁê½º");      ArrayPrice.add(9000);
-	      ArrayName.add("Æ÷µµÁê½º");         ArrayPrice.add(10000);
-	      ArrayName.add("Åä¸¶ÅäÁê½º");      ArrayPrice.add(7000);
-	      ArrayName.add("µş±â Áê½º");      ArrayPrice.add(15000);
+	   Title tit = new Title("ê²°ì œì¤‘");
 
-	      ArrayName.add("»ıÅ©¸²ÄÉÀÍ");      ArrayPrice.add(30000);
-	      ArrayName.add("ÃÊÄÚÄÉÀÍ");         ArrayPrice.add(35000);
-	      ArrayName.add("µş±âÄÉÀÍ");         ArrayPrice.add(37000);
-	      ArrayName.add("»÷µåÀ§Ä¡");         ArrayPrice.add(25000);
-	      ArrayName.add("ºê ·± Ä¡");         ArrayPrice.add(55000);
-	         
+	   public NewScreen() {                    //ë©”ë‰´íŒ,(ì´ë¦„,ê°€ê²©)(í† í•‘ì´ë¦„,ê°€ê²©)
+	      //         <MENU>                              <TOPPING'S MENU>
+	      Array.add("mnu:ë¸”ë™ë°€í¬í‹°:1500 => 0");         ArrayTopping.add("mnu: í„         =>500 =>   0");
+	      Array.add("mnu:ì–¼ê·¸ë ˆì´ë°€í¬í‹°:3500 => 1");         ArrayTopping.add("mnu: ì½”ì½”ë„›    =>500=>    1");
+	      Array.add("mnu:ììŠ¤ë¯¼ ê·¸ë¦°ë°€í¬í‹°  : 3500 => 2");         ArrayTopping.add("mnu: ì•Œë¡œì—    =>500=>    2");
+	      Array.add("mnu:íƒ€ë¡œë°€í¬í‹°: 2500 => 3");         ArrayTopping.add("mnu: í™”ì´íŠ¸ë„› =>500=>    3");
+	      Array.add("mnu:ì œì£¼ ê·¸ë¦°ë°€í¬í‹°: 5500 => 4");         ArrayTopping.add("mnu: ì¶”ê°€ ì•ˆí•¨         =>    4");
+	                                          //      <TOPPING'S Price>
+	      Array.add("mnu:ìëª½ì¥¬ìŠ¤   : 10000 => 5");         ArrayToppingPrice.add(500);
+	      Array.add("mnu:ì˜¤ë Œì§€ì¥¬ìŠ¤: 9000  => 6");         ArrayToppingPrice.add(500);
+	      Array.add("mnu:í¬ë„ ì¥¬ìŠ¤  : 10000 => 7");         ArrayToppingPrice.add(500);
+	      Array.add("mnu:í† ë§ˆí† ì¥¬ìŠ¤: 7000  => 8");         ArrayToppingPrice.add(500);
+	      Array.add("mnu:ë”¸ê¸° ì¥¬ìŠ¤  : 15000 => 9");         ArrayToppingPrice.add(0);
+
+	      Array.add("mnu:ìƒí¬ë¦¼ì¼€ìµ: 30000 => 10");
+	      Array.add("mnu:ì´ˆì½”ì¼€ìµ   : 35000 => 11");
+	      Array.add("mnu:ë”¸ê¸°ì¼€ìµ   : 37000 => 12");
+	      Array.add("mnu:ìƒŒë“œìœ„ì¹˜   : 25000 => 13");
+	      Array.add("mnu:ë¸Œ ëŸ° ì¹˜    : 55000 => 14");
+	   //  <MENU NAME>                   <MENU Price>
+	      ArrayName.add("ë¸”ë™ë°€í¬í‹°");      ArrayPrice.add(1500);
+	      ArrayName.add("ì–¼ê·¸ë ˆì´ë°€í¬í‹°");      ArrayPrice.add(3500);
+	      ArrayName.add("ììŠ¤ë¯¼ ê·¸ë¦°ë°€í¬í‹°");      ArrayPrice.add(3500);
+	      ArrayName.add("íƒ€ë¡œë°€í¬í‹°");      ArrayPrice.add(2500);
+	      ArrayName.add("ì œì£¼ ê·¸ë¦°ë°€í¬í‹°");      ArrayPrice.add(5500);
+
+	      ArrayName.add("ìëª½ì¥¬ìŠ¤");         ArrayPrice.add(10000);
+	      ArrayName.add("ì˜¤ë Œì§€ì¥¬ìŠ¤");      ArrayPrice.add(9000);
+	      ArrayName.add("í¬ë„ì¥¬ìŠ¤");         ArrayPrice.add(10000);
+	      ArrayName.add("í† ë§ˆí† ì¥¬ìŠ¤");      ArrayPrice.add(7000);
+	      ArrayName.add("ë”¸ê¸° ì¥¬ìŠ¤");      ArrayPrice.add(15000);
+
+	      ArrayName.add("ìƒí¬ë¦¼ì¼€ìµ");      ArrayPrice.add(30000);
+	      ArrayName.add("ì´ˆì½”ì¼€ìµ");         ArrayPrice.add(35000);
+	      ArrayName.add("ë”¸ê¸°ì¼€ìµ");         ArrayPrice.add(37000);
+	      ArrayName.add("ìƒŒë“œìœ„ì¹˜");         ArrayPrice.add(25000);
+	      ArrayName.add("ë¸Œ ëŸ° ì¹˜");         ArrayPrice.add(55000);
+
 	   }
-	   
-	   public void mat() {            //Ä«Å×°í¸® ---->¸Ş´ºÆÇÀ¸·Î ³Ñ¾î°©´Ï´Ù.
+
+	   public void mat() {            //ì¹´í…Œê³ ë¦¬ ---->ë©”ë‰´íŒìœ¼ë¡œ ë„˜ì–´ê°‘ë‹ˆë‹¤.
 	      number = sc.nextInt();
 	      if(number == 10)
 	      {   
 	         System.out.format(txt1.toString());System.out.println();
 	         num3=0;
 	         for(int i =0;i<5;i++) {
-	         
+
 	         System.out.format("%s\n",Array.get(i));
-	         
+
 	         }
 	         showbar();
-	         
+
 	      }
 	      else if(number ==20) {
 	         System.out.format(txt2.toString());System.out.println();
 	         num3=4; //Topping's price =0
 	         for(int i=5;i<10;i++) {
-	            
+
 	         System.out.format("%s\n",Array.get(i));
 	         }
 	         showbar();
@@ -81,105 +81,104 @@ public class NewScreen extends Screen{
 	         System.out.format(txt3.toString());System.out.println();
 	         num3=4;
 	         for(int i=10;i<15;i++) {
-	            
+
 	         System.out.format("%s\n",Array.get(i));
-	            
+
 	         }
 	         showbar();
 	      }
 	      else {
-	         System.out.println("Àß¸ø ÀÔ·ÂÇÏ¼Ì½À´Ï´Ù.");
+	         System.out.println("ì˜ëª» ì…ë ¥í•˜ì…¨ìŠµë‹ˆë‹¤.");
 	         showbtn();
 	         showbar();
 	         mat();   
 	      }
-	   
+
 	   }
-	   
-	   public void receipt() {         //¸Ş´ºÆÇ¿¡¼­ ¼ö·®°ú °³¼ö¸¦ ÀÔ·ÂÈÄ °á°ú°ªÀ» µµÃâÇÕ´Ï´Ù.
+
+	   public void receipt() {         //ë©”ë‰´íŒì—ì„œ ìˆ˜ëŸ‰ê³¼ ê°œìˆ˜ë¥¼ ì…ë ¥í›„ ê²°ê³¼ê°’ì„ ë„ì¶œí•©ë‹ˆë‹¤.
 	      Scanner sc = new Scanner(System.in);
 	      int sum =0;
-	       
+
 
 	      while(true) {
-	          System.out.println("¸Ş´º ¹øÈ£¿Í ¼ö·® ÀÔ·ÂÇÏ¼¼¿ä");
+	          System.out.println("ë©”ë‰´ ë²ˆí˜¸ì™€ ìˆ˜ëŸ‰ ì…ë ¥í•˜ì„¸ìš”");
 	          showbar();
-	          int num1 = sc.nextInt();      //¸Ş´º(0~14)¹öÆ°
-	          int num2 = sc.nextInt();      //¼ö·®
-	         
-	             if(number == 10 && (0<=num1)&&(num1<5)) {          //Milk Tea¼±ÅÃ½Ã, Topping Ãß°¡ÇÏ½Ã°Ú½À´Ï±î?
+	          int num1 = sc.nextInt();      //ë©”ë‰´(0~14)ë²„íŠ¼
+	          int num2 = sc.nextInt();      //ìˆ˜ëŸ‰
+
+	             if(number == 10 && (0<=num1)&&(num1<5)) {          //Milk Teaì„ íƒì‹œ, Topping ì¶”ê°€í•˜ì‹œê² ìŠµë‹ˆê¹Œ?
 	                System.out.format(txt4.toString());System.out.println(""); 
 	                for(int i =0;i<5;i++){
 	               System.out.format("%s\n",ArrayTopping.get(i));  
 	                }
 	                showbar();
 	                 num3 = sc.nextInt();
-	                    
+
 	             }
-	                
+
 	             if(number == 10 && !((0 <= num1) && (num1 < 5))) {
-	             System.out.println("¸Ş´º¹øÈ£¸¦ Àß¸ø ÀÔ·ÂÇÏ¼Ì½À´Ï´Ù.");
+	             System.out.println("ë©”ë‰´ë²ˆí˜¸ë¥¼ ì˜ëª» ì…ë ¥í•˜ì…¨ìŠµë‹ˆë‹¤.");
 	             continue;
 	                }
 	             else if(number == 20 && !((5 <= num1) && (num1 < 10))) {
-	             System.out.println("¸Ş´º¹øÈ£¸¦ Àß¸ø ÀÔ·ÂÇÏ¼Ì½À´Ï´Ù.");
+	             System.out.println("ë©”ë‰´ë²ˆí˜¸ë¥¼ ì˜ëª» ì…ë ¥í•˜ì…¨ìŠµë‹ˆë‹¤.");
 	             continue;
 	                }
 	             else if (number == 30 && !((10 <= num1) && (num1 < 15))) {
-	             System.out.println("¸Ş´º¹øÈ£¸¦ Àß¸ø ÀÔ·ÂÇÏ¼Ì½À´Ï´Ù.");
+	             System.out.println("ë©”ë‰´ë²ˆí˜¸ë¥¼ ì˜ëª» ì…ë ¥í•˜ì…¨ìŠµë‹ˆë‹¤.");
 	             continue;
 	                }
-	         
-	             
+
+
 	          int price = (num2 *(int)ArrayPrice.get(num1))+((int)ArrayToppingPrice.get(num3)*(int)num2);
 	          sum += price;
 	          Integer.toString(num1);
 	          Integer.toString(num2);
-	          ArrayOrder.add("ord:"+(String)ArrayName.get(num1)+"ÀÇ ¼ö·®Àº "+ num2 + "°³ ÀÌ°í °¡°İÀº "+ price + "¿ø ÀÔ´Ï´Ù.\n");
-	      
-	          System.out.println("´Ù¸¥¸Ş´º¼±ÅÃ '1',ÁÖ¹®¿Ï·á'2' ÀÔ·ÂÇÏ¼¼¿ä. ");
+	          ArrayOrder.add("ord:"+(String)ArrayName.get(num1)+"ì˜ ìˆ˜ëŸ‰ì€ "+ num2 + "ê°œ ì´ê³  ê°€ê²©ì€ "+ price + "ì› ì…ë‹ˆë‹¤.\n");
+
+	          System.out.println("ë‹¤ë¥¸ë©”ë‰´ì„ íƒ '1',ì£¼ë¬¸ì™„ë£Œ'2' ì…ë ¥í•˜ì„¸ìš”. ");
 	          showbar();
 	          int word1 = sc.nextInt();
 
 	          if(word1 == 1) {
 	             showbtn();
-	             mat();                    //(1)¼±ÅÃ½Ã, ´Ù½Ã Ä«Å×°í¸®·Î µ¹¾Æ°©´Ï´Ù.
+	             mat();                    //(1)ì„ íƒì‹œ, ë‹¤ì‹œ ì¹´í…Œê³ ë¦¬ë¡œ ëŒì•„ê°‘ë‹ˆë‹¤.
 	          }
 	          else if(word1 == 2) 
-	             break;                  //ÁÖ¹®¿Ï·áÇÏ°Ú½À´Ï±î?
+	             break;                  //ì£¼ë¬¸ì™„ë£Œí•˜ê² ìŠµë‹ˆê¹Œ?
 
 	      }    
-	          for(int i=0;i<ArrayOrder.size();i++) {       //ÁÖ¹®³»¿ª
+	          for(int i=0;i<ArrayOrder.size();i++) {       //ì£¼ë¬¸ë‚´ì—­
 	            System.out.format("%s",ArrayOrder.get(i));
 	      }
-	      Value  val = new Value("ÇÕ°è", sum);
+	      Value  val = new Value("í•©ê³„", sum);
 	      System.out.format(val.toString()); System.out.println("");
-	      
+
 	}
-	   
-	   public void Buy()  {                   //°áÁ¦¸¦ ¿Ï·áÇÒÁö,Ãë¼ÒÇÒÁö °áÁ¤ÇÕ´Ï´Ù.
+
+	   public void Buy()  {                   //ê²°ì œë¥¼ ì™„ë£Œí• ì§€,ì·¨ì†Œí• ì§€ ê²°ì •í•©ë‹ˆë‹¤.
 	      showbar();
-	      
-	      System.out.println("°áÁ¦¸¦ ¿øÇÏ¸é ¾Æ¹«¹öÆ° Å¬¸¯ÇÏ¼¼¿ä!");
-	      System.out.println("ÁÖ¹®Ãë¼Ò : 99");
+
+	      System.out.println("ê²°ì œë¥¼ ì›í•˜ë©´ ì•„ë¬´ë²„íŠ¼ í´ë¦­í•˜ì„¸ìš”!");
+	      System.out.println("ì£¼ë¬¸ì·¨ì†Œ : 99");
 	      int cancel = sc.nextInt();
 	      if(cancel==99){
-	         System.out.println("Ã³À½È­¸éÀ¸·Î µ¹¾Æ°©´Ï´Ù!");
+	         System.out.println("ì²˜ìŒí™”ë©´ìœ¼ë¡œ ëŒì•„ê°‘ë‹ˆë‹¤!");
 	         }
 	      else {
 	         System.out.format(tit.toString());System.out.println("");
 	     	try {	
-	            
-				Thread.sleep(2000); // °áÁ¦ µô·¹ÀÌ
-	            
+
+				Thread.sleep(2000); // ê²°ì œ ë”œë ˆì´
+
 			} catch (InterruptedException e) {
-	        
+
 	      }
 	     	 System.out.format(tit1.toString());System.out.println("");
 	         System.out.format(tit2.toString());System.out.println("");
-	        
+
 	   }
-	      
+
 	   }
 	}
-    
